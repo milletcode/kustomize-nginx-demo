@@ -7,6 +7,8 @@
 
 kubectl > 1.14 版本
 
+[安装kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
+
 
 ## 快速开始
 
