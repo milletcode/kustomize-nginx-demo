@@ -19,11 +19,11 @@ kubectl kustomize | kubectl apply -f -
 
 ## 概念理解
 
-1. kubectl
+### kubectl
 
 kubectl是k8s的CLI客户端管理工具
 
-1. kustomize
+### kustomize
 
 [kustomize](https://kustomize.io/)是一个k8s配置的模板化工具，他的优点是：
 
@@ -31,7 +31,7 @@ kubectl是k8s的CLI客户端管理工具
 1. 作者来自Google，与k8s保持非常高的互动
 1. 目前已经进入到了kubectl官方的子命令
 
-1. 了解k8s
+### 了解k8s
 
 k8s的系统学习难度其实还是挺高的，这需要大量丰富的前置运维研发的基础知识，
 但是对于上层的开发者来说，可以重点关注以下几个知识点：
