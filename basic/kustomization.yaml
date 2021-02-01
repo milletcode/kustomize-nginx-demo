@@ -1,0 +1,14 @@
+resources:
+- ./deployments.yaml
+- ./service.yaml
+- ./ingress.yaml
+
+namespace: carbon
+
+imageTags:
+- name: nginx
+  newTag: stable
+
+generatorOptions:
+  labels:
+    generator: sage

@@ -1,0 +1,32 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    tier: website
+  name: website
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      tier: website
+  template:
+    metadata:
+      labels:
+        tier: website
+    spec:
+      containers:
+      - name: website
+        image: nginx:stable
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80
+          name: http
+#        readinessProbe:
+#          httpGet:
+#            path: /healthz
+#            port: http
+      imagePullSecrets:
+      - name: image-registry-secret
+      nodeSelector:
+        kubernetes.io/arch: "amd64"
