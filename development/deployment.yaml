@@ -10,6 +10,12 @@ spec:
       - name: website
         imagePullPolicy: Always
         image: nginx:latest
+        env:
+        - name: variable1
+          value: "hello"
+        - name: variable2
+          value: "hello"
+
         resources:
           limits:
             cpu: 100m

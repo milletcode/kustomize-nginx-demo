@@ -46,3 +46,7 @@ k8s的系统学习难度其实还是挺高的，这需要大量丰富的前置�
 
 1. 物理环境隔离
 1. namespace隔离，这种我们会为客户创建 biz-dev/biz-test 两种namespace 
+
+### 配置撰写
+
+[私密配置撰写](https://kubernetes.io/docs/concepts/configuration/secret/#using-secrets-as-environment-variables)
