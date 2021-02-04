@@ -23,6 +23,12 @@ kubectl kustomize | kubectl apply -f -
 
 kubectl是k8s的CLI客户端管理工具
 
+使用kubectl直接执行
+
+```ecma script level 4
+kubectl apply -f ./original
+```
+
 ### kustomize
 
 [kustomize](https://kustomize.io/)是一个k8s配置的模板化工具，他的优点是：
